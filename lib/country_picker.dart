@@ -30,6 +30,7 @@ export 'src/country_parser.dart';
 void showCountryPicker({
   required BuildContext context,
   required ValueChanged<Country> onSelect,
+  VoidCallback? onClosed,
   List<String>? exclude,
   List<String>? countryFilter,
   bool showPhoneCode = false,
@@ -40,6 +41,7 @@ void showCountryPicker({
   showCountryListBottomSheet(
     context: context,
     onSelect: onSelect,
+    onClosed: onClosed,
     exclude: exclude,
     countryFilter: countryFilter,
     showPhoneCode: showPhoneCode,
